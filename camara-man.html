@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+    <h1>Este eres tu JAJAJAJJAJA</h1>
+<body>
+<div>
+    <video id="video" autoplay width="400px"></video>
+    <video id="video1" autoplay width="500px"></video>
+    <video id="video2" autoplay width="300px"></video>
+    <video id="video3" autoplay width="200px"></video>
+</div>
+
+<script>
+  let video = document.getElementById('video');
+ 
+  if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function (stream) { 
+        video.srcObject = stream;
+      })
+      .catch(function (error) {
+        console.log("Something went wrong!");
+      });
+  }
+
+  let video1 = document.getElementById('video1');
+ 
+  if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function (stream) { 
+        video1.srcObject = stream;
+      })
+      .catch(function (error) {
+        console.log("Something went wrong!");
+      });
+  }
+
+  let video2 = document.getElementById('video2');
+ 
+  if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function (stream) { 
+        video2.srcObject = stream;
+      })
+      .catch(function (error) {
+        console.log("Something went wrong!");
+      });
+  }
+
+  let video3 = document.getElementById('video3');
+ 
+  if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function (stream) { 
+        video3.srcObject = stream;
+      })
+      .catch(function (error) {
+        console.log("Something went wrong!");
+      });
+  }
+</script>
+
+</body>
+</html>

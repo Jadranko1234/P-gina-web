@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="webOs.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webOs</title>
+    <style>
+        html{
+            background-color: antiquewhite;
+        }
+        body{
+            background-color: rgb(251, 202, 143);
+            width: 605px;
+        }
+        #v1 {
+            border-style: outset;
+            background-color: rgb(177, 90, 8);
+            width: 600px;
+        }
+        #img {
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(255, 0, 0);
+            width: 333px;
+            height: 333px;
+        }
+
+        #simi {
+            width: 333px;
+            height: 350px;
+            background-image: url(chile.png);
+            background-size: 340px;
+            background-repeat: no-repeat;
+            animation-name: imagen;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-delay: 10s;
+        }
+
+        @keyframes imagen{
+            from {
+                background-image: url("chile.png");
+            }
+            to {
+                background-image: url("a.png");
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="v1"> 
+    <h1>-----Pou 3: La venganza virtual----</h1>
+    </div>
+    <p id="texto">Esta película es recomendable para mayores de 18+</p>
+    <p>Su contenido es altamente ilegal, ya que se trata de una película malévola</p>
+    <h6>Posdata: Hemos gastado 1 uro en la película y recaudamos más de 3 mil millones de uros</h6>
+    <div id="img">
+    <img src="chile.png" width="333" height="333">
+    </div>
+    <div id="simi">
+    
+    </div>
+    
+</body>
+</html>
